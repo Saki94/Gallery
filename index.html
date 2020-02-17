@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        body {
+
+            font-family: sans-serif;
+
+        }
+
+        h1 {
+
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+
+        }
+
+        p {
+
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 20px;
+
+        }
+
+        #main {
+
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+
+            grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+            grid-gap: 16px;
+            align-items: flex-start;
+
+            display: grid;
+            display: -moz-grid;
+            display: -ms-grid;
+
+        }
+
+        div img {
+
+            width: 160px;
+            background-color: rgb(90, 134, 184);
+            border-radius: 8px 8px 0px 0px;
+
+        }
+
+        .box {
+
+            background-image: url(placeholder-image.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 1px solid transparent;
+            text-align: center;
+            
+        }
+
+        @media screen and (max-width: 1024px){
+            
+            .main{
+
+                grid-template-columns: repeat(5,1fr);
+
+            }
+
+        }
+
+        @media screen and (max-width: 768px){
+            
+            .main{
+
+                grid-template-columns: repeat(3,1fr);
+
+            }
+
+        }
+
+        @media screen and (max-width: 414px){
+            
+            .main{
+
+                grid-template-columns: repeat(1,1fr);
+
+            }
+
+        }   
+
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="main">
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="Image"><p>Image Title</p></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    
+</body>
+</html>
